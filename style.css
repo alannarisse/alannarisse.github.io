@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playball&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: darkorchid;
+  margin: 80px;
+}
+
 h1 {
   color: yellowgreen;
   font-size: 60px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Playball', cursive;
+}
+.journal-page h1 {
+  color: tomato;
+}
+img {
+  width: 100%;
+}
+.logo {
+  width: 200px;
+}
+.dell-img {
+  width: 50%;
 }
