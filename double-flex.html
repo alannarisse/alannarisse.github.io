@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      img {
+        width: 100%;
+      }
+
+      .parent {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        border: 1px solid salmon;
+      }
+      .child {
+        flex: 1;
+      }
+      .left {
+        padding: 2em;
+      }
+      .right {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        flex: 33.3%;
+        padding: 10px;
+        border: 1px solid salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="parent">
+      <section class="child left">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus tempore consectetur voluptatibus commodi corrupti consequuntur perspiciatis dicta veniam sit ratione id hic laudantium nihil eligendi quaerat inventore libero ullam assumenda animi, possimus quisquam blanditiis accusamus laboriosam et? Assumenda eaque quod earum maiores id exercitationem itaque ratione nulla, deleniti minus perferendis.</p>
+      </section>
+      <section class="child right">
+        <div class="card">
+          <img src="http://placekitten.com/400/400" />
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/400/400" />
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/400/400" />
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/400/400" />
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/400/400" />
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/400/400" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
