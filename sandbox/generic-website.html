@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background-image: url('images/trees-background.jpg');
+        background-size: cover;
+        height: 500px;
+        background-position: 100% 10%;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      nav ul {
+        display: flex;
+        background: rgba(255, 255, 255, 0.6);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav li {
+        flex: 1;
+        text-align: center;
+      }
+      nav li:hover {
+        background: rgba(100, 164, 220, 0.6);
+      }
+      li a {
+        font-size: 40px;
+        color: white;
+      }
+      main {
+        padding: 80px 0;
+        background: rgba(100, 164, 220, 1);
+        height: 800px;
+      }
+      /* li a:hover {color:blue;} */
+
+      .flex {
+        padding: 60px;
+        display: flex;
+        width: 70%;
+        margin: auto;
+        background: white;
+      }
+      .flex div {
+        flex: 1;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(85, 90, 95);
+        color: white;
+        padding: 60px 100px 40px 100px;
+      }
+    </style>
+    <!-- froze arial tree img jon-anders-dalan-93lIGb_T1jU-unsplash.jpg -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="flex">
+        <div class="left">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex possimus numquam tenetur reiciendis animi labore dignissimos. Quia, aut veritatis. Ratione!</p>
+        </div>
+        <div class="right">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex possimus numquam tenetur reiciendis animi labore dignissimos. Quia, aut veritatis. Ratione!</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Alanna Risse 2023</p>
+    </footer>
+  </body>
+</html>
