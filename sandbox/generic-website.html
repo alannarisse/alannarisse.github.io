@@ -12,6 +12,7 @@
       img {
         width: 100%;
       }
+
       header {
         background-image: url('images/trees-background.jpg');
         background-size: cover;
@@ -24,6 +25,9 @@
         left: 0;
         right: 0;
       }
+      a {
+        text-decoration: none;
+      }
       nav ul {
         display: flex;
         background: rgba(255, 255, 255, 0.6);
@@ -34,6 +38,10 @@
       nav li {
         flex: 1;
         text-align: center;
+        padding: 10px;
+      }
+      nav a:hover {
+        color: rgb(3, 3, 159);
       }
       nav li:hover {
         background: rgba(100, 164, 220, 0.6);
@@ -47,7 +55,6 @@
         background: rgba(100, 164, 220, 1);
         height: 800px;
       }
-      /* li a:hover {color:blue;} */
 
       .flex {
         padding: 60px;
@@ -77,6 +84,9 @@
       .right {
         padding-left: 60px;
       }
+      .feature-img {
+        padding: 10px;
+      }
     </style>
     <!-- froze arial tree img jon-anders-dalan-93lIGb_T1jU-unsplash.jpg -->
   </head>
@@ -99,7 +109,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex possimus numquam tenetur reiciendis animi labore dignissimos. Quia, aut veritatis. Ratione!</p>
           </article>
           <article>
-            <img src="http://placekitten.com/400/500" alt="" />
+            <img class="feature-img" src="http://placekitten.com/400/500" alt="" />
           </article>
         </div>
         <div class="right">
