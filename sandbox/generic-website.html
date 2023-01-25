@@ -9,6 +9,9 @@
       body {
         margin: 0;
       }
+      img {
+        width: 100%;
+      }
       header {
         background-image: url('images/trees-background.jpg');
         background-size: cover;
@@ -65,6 +68,15 @@
         color: white;
         padding: 60px 100px 40px 100px;
       }
+      .left {
+        display: flex;
+      }
+      .left article {
+        flex: 1;
+      }
+      .right {
+        padding-left: 60px;
+      }
     </style>
     <!-- froze arial tree img jon-anders-dalan-93lIGb_T1jU-unsplash.jpg -->
   </head>
@@ -83,7 +95,12 @@
     <main>
       <section class="flex">
         <div class="left">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex possimus numquam tenetur reiciendis animi labore dignissimos. Quia, aut veritatis. Ratione!</p>
+          <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex possimus numquam tenetur reiciendis animi labore dignissimos. Quia, aut veritatis. Ratione!</p>
+          </article>
+          <article>
+            <img src="http://placekitten.com/400/500" alt="" />
+          </article>
         </div>
         <div class="right">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex possimus numquam tenetur reiciendis animi labore dignissimos. Quia, aut veritatis. Ratione!</p>
