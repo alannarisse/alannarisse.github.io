@@ -1,0 +1,12 @@
+* {box-sizing: border-box;}
+img {
+  width:100%;
+}
+body {
+  margin:0;
+}
+
+.cat {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
