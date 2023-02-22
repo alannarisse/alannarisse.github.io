@@ -8,5 +8,13 @@ body {
 
 .cat {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap:2rem;
+  grid-row-gap:4rem;
+}
+.feature {
+  
+}
+.kitten {
+  border:1px solid black;
 }
