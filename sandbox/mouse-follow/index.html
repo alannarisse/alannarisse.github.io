@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JQuery mouse follow</title>
+  <style>
+
+    .flex {
+      display:flex;
+    }
+    .img-rotate {
+      padding-right:90px;
+    }
+    .hover-me {
+      height:200px;
+      width:200px;
+      background:lightsalmon;
+    }
+    .badge {
+      position:absolute;
+      display:inline-block;
+      background:blue;
+      top:50%;
+      left:50%;
+      transform: translateY(-50%) translateX(-50%)
+    }
+    .container {
+      position:relative;
+      width:100vw;
+      height:100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+<div class="badge">boop</div>
+</div>
+  <main class="flex">
+  <div class="img-rotate"><img src="http://placekitten.com/400/400"></div>
+  <div class="hover-me">Hover me</div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="mousefollower.js"></script>
+<script>
+$(function(){
+	 $('.container').mousefollower();
+});
+</script>
+  <script>
+    $('.hover-me').hover(function(){
+      $('.img-rotate').css('transform', 'rotate(45deg)')
+    })
+  </script>
+</body>
+</html>
