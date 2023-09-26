@@ -1,29 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;500&display=swap');    
+    
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Source Sans 3', sans-serif;
+*/
+    body {
+      background-color: rgb(236, 190, 190);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight:300;
+      color: #333333;
+    }
+    .wrapper {
+      background:white;
+      width:80%;
+      margin:auto;
+      padding:60px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight:600;
+    }
     h1 {
-      color:#705c70;
-      border:2px solid black;
-      padding: 30px;
+      font-family: 'Playfair Display', serif;
     }
     p {
-      color:peru;
-      margin: 25px 50px;
-      border:2px solid black;
+      line-height:60px;
     }
     a {
       color: red;
-      border:2px solid black;
+      font-weight:500;
     }
     div {
-      border:2px solid black;
     }
     ul {
-      border:2px solid black;
+      margin:0;
+      list-style:none;
     }
     .flexfun {
       display:flex;
-      margin:40px;
     }
     .flexfun .column {
-      padding:20px;
     }
     .flexfun p {
       margin:0;
