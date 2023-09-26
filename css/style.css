@@ -1,0 +1,36 @@
+    h1 {
+      color:#705c70;
+      border:2px solid black;
+      padding: 30px;
+    }
+    p {
+      color:peru;
+      margin: 25px 50px;
+      border:2px solid black;
+    }
+    a {
+      color: red;
+      border:2px solid black;
+    }
+    div {
+      border:2px solid black;
+    }
+    ul {
+      border:2px solid black;
+    }
+    .flexfun {
+      display:flex;
+      margin:40px;
+    }
+    .flexfun .column {
+      padding:20px;
+    }
+    .flexfun p {
+      margin:0;
+    }
+    .column1 {
+      flex:25%;
+    }
+    .column2 {
+      flex:75%;
+    }
