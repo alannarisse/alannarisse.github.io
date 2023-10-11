@@ -5,9 +5,15 @@
 		},
 		{
 			"path": "../sandwiches"
+		},
+		{
+			"path": "../psuinteractivemedia"
+		},
+		{
+			"path": "../flexbox-tempolate"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "alannarisse.github.io"
+		"liveServer.settings.multiRootWorkspaceName": "flexbox-tempolate"
 	}
 }
