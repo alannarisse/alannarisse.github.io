@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Source+Sans+3:wght@900&display=swap');
+
+/* 
+font-family: 'Sintony', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  color: white;
+  font-size:20px;
+  font-family: 'Sintony', sans-serif;
+}
+.small {
+  font-size: 16px;
+}
+img {
+  width:100%;
+}
+a {
+  text-decoration:none;
+}
+
+h1, h2, h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight:900;
+}
+h1 {
+  font-size:78px;
+}
+body.homepage {
+  color: rgb(77, 61, 28);
+}
+body.homepage a {
+  color: rgb(77, 61, 28);
+}
+body.homepage a:hover {
+  color: rgb(221, 59, 10);
+}
+body.subpage {
+  color: white;
+}
+.wrapper { 
+  height:100vh;
+  width:100vh;
+}
+header {
+  background-color:antiquewhite;
+  display:flex;
+  width:100vw;
+  align-items:center;
+  padding: 10px 20px 0 20px;
+  /* position:fixed; turn all these on for position fixed.
+  top:0;
+  left:0;
+  right:0; */
+}
+.logo {
+  flex:25%;
+
+}
+.logo a { 
+  display:flex;
+  align-items: center;
+}
+.logo-img {
+  width:80px;
+  margin-right:10px;
+
+}
+nav {
+  flex:75%;
+}
+
+nav ul { 
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+  align-items:center;
+  margin:0;
+}
+nav li {
+  padding:10px 0;
+
+  
+}
+nav li a {
+  padding:10px 30px;
+  color: #333;
+}
+nav li a:hover {
+  color:rgb(116, 81, 116);
+}
+
+
+.flexbox {
+  width: 100vw;
+  display:flex;
+  position:relative;
+}
+.subpage .flexbox {
+  overflow:hidden;
+  
+}
+.flexbox div {
+  flex:1;
+}
+.overlay {
+  position:absolute;
+  min-height:35%;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100%;
+  background-color: rgba(255, 255, 255, .6);
+  text-align:center;
+}

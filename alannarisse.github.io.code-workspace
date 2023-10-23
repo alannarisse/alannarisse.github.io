@@ -4,16 +4,22 @@
 			"path": "."
 		},
 		{
-			"path": "../sandwiches"
-		},
-		{
 			"path": "../psuinteractivemedia"
 		},
 		{
-			"path": "../flexbox-tempolate"
+			"path": "../flexbox-template"
+		},
+		{
+			"path": "../jquery-demo-sound-interactions"
+		},
+		{
+			"path": "../smart-chef"
+		},
+		{
+			"path": "../pour-bastard"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "alannarisse.github.io"
+		"liveServer.settings.multiRootWorkspaceName": "jquery-demo-sound-interactions"
 	}
 }

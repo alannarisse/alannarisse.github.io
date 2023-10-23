@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Inika&display=swap');
+
+/* 
+font-family: 'Fredoka', sans-serif;
+font-family: 'Inika', serif;
+primary: #FFF200;
+secondary: #1C1C23;
+*/
+
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  font-family: 'Inika', serif;
+}
+img {
+  width:100%;
+}
+
+h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+}
+h2, h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+}
+a {
+  color: black;
+  text-decoration:none;
+}
+footer {
+  background-color: #FFF200;
+  width:100vw;
+}
+
+.button {
+  display:inline-block;
+  background-color: #FFF200;
+  color: #1C1C23;
+  padding: 12px 16px;
+  border-radius: 2px;
+}
+.button:hover {
+  background-color: #1C1C23;
+  color: #FFF200;
+}
+.home-top {
+  background-image: url('images/home-background.png');
+  background-size:cover;
+  width:100vw;
+  height:100vh;
+}
+.home-top nav a {
+color: white;
+}
+.home-top nav h1 {
+  margin:0;
+}
+.home-top nav {
+  padding-top:60px;
+  padding-bottom:60px;
+  border-bottom: 1px solid white;
+}
+.home-top nav ul {
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:0;
+  margin:0;
+}
+.home-about {
+  height:100vh;
+  width:100vw;
+  background-color: #1C1C23;
+  color: white;
+}
+.flex {
+  display:flex;
+}
+.flex div {
+  flex:1;
+}
