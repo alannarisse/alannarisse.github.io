@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Germania+One&family=Shojumaru&display=swap');
+/* 
+font-family: "Black Ops One";
+font-family: "Germania One";
+font-family: "Shojumaru";
+*/
+  * {box-sizing: border-box;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+}
+body.homepage {
+  background-image: url('images/bg-home.png');
+  background-size:cover;
+}
+
+body.japan-page {
+  font-family: "Shojumaru";
+}
+
+img {
+  width:100%;
+}
+
+a { text-decoration:none;}
+a:hover {
+  color:cornflowerblue;
+}
+h2 {
+  text-align: center;
+}
+main {
+  /* margin-top:72px;  use only with position fixed */
+  width: 100vw;
+  /* height:100vh; */
+}
+
+body.japan-page header {
+}
+
+header {
+  display:flex;
+  width:100vw;
+  align-items:baseline;
+  padding: 10px 20px 0 20px;
+  /* position:fixed; turn all these on for position fixed.
+  top:0;
+  left:0;
+  right:0; */
+}
+.logo {
+  flex:25%;
+}
+.logo-img {
+  width:80px;
+  border-radius: 50%;
+}
+nav {
+  flex:75%;
+}
+
+nav ul { 
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+  align-items:end;
+  margin:0;
+}
+nav li {
+  padding:10px 0;
+
+  
+}
+nav li a {
+  border-right:2px solid #666;
+  padding:10px 30px;
+  color: #333;
+}
+nav li a:hover {
+  color:rgb(116, 81, 116);
+}
+
+
+.border {
+  border: 1px solid black;
+}
+
+.flexbox {
+  display:flex;
+  width:80%;
+  margin:auto;
+  margin-top:60px;
+}
+.homepage .flexbox {
+  flex-wrap:wrap;
+}
+.homepage .flexbox div {
+  flex:50%;
+}
+.flexbox div {
+  flex:1;
+}
+
+footer a {
+  color: #f5a1a1;
+}
+
+body.japan-page footer a {
+  color: #fff;
+}
+.column {
+  text-align:center;
+}
+.japan-page .column {
+  margin:32px;
+}
+.homepage .column {
+  padding:12px 32px;
+}
+footer {
+  background-color:#333;
+  padding:30px 60px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
