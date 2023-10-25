@@ -1,0 +1,153 @@
+* {box-sizing: border-box;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+  background-color:white;
+  font-size:24px;
+}
+
+body.subpage {
+  background-image: url('');
+  background-repeat: repeat;
+}
+
+h2 {
+  margin:0;
+}
+img {
+  width:100%;
+}
+
+a { text-decoration:none;}
+a:hover {
+  color:cornflowerblue;
+}
+
+main {
+  /* margin-top:72px;  use only with position fixed */
+  width: 100vw;
+  /* height:100vh; */
+}
+
+nav {
+  width:60%;
+  margin:auto;
+  background-color: #FF7F00;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.lionpage nav {
+  background-color: #C98C35;
+}
+
+nav ul { 
+  list-style:none;
+  display:flex;
+  justify-content: space-between;
+  align-items:end;
+  margin:0;
+}
+nav li {
+  padding:30px 30px;
+
+  
+}
+nav li a {
+  padding:10px 0 4px 0; /* the 3rd value is for padding bottom */
+  color: black;
+}
+nav li a:hover {
+  color:white;
+  border-bottom: 3px solid white;
+}
+/* Homepage cat hover */
+.navigation {
+  display: flex;
+  padding-bottom:80px;
+}
+.navigation div {
+  flex: 1; 
+  text-align: center;
+}
+.cat-hover {
+  display: none;
+}
+
+
+.border {
+  border: 1px solid black;
+}
+
+.flexbox {
+  display:flex;
+  width:95%;
+  margin:auto;
+  margin-top:60px;
+  flex-wrap:wrap;
+}
+.flexbox section {
+  flex:1;
+}
+.flexbox .right {
+  display:flex;
+}
+.lionpage .flexbox div {
+  flex:50%;
+}
+
+.lion-img {
+  width:292px;
+  height: 479px;
+}
+ 
+.glance {
+  display:flex;
+  position:relative;
+  border: 1px solid #FF7F00;
+  width:60%;
+  /* margin values are top right bottom left */
+  margin:140px auto 80px auto;
+}
+.glance div {
+  flex:1;
+  padding: 64px 20px
+}
+.glance h2 {
+  position:absolute;
+  background-color:#FF7F00;
+  color:white;
+  padding:8px 6px;
+}
+.glance h2.top {
+  top:-30px;
+  left:0;
+}
+.lionpage .glance h2.bottom {
+  bottom:-58px;
+  left:0;
+}
+.lionpage .glance h2 { 
+  background-color:#C98C35;
+}
+
+footer a {
+  color: white;
+}
+
+body.subpage01 footer a {
+  color: #fff;
+}
+footer {
+  background-color:#FF7F00;
+  padding:30px 60px;
+  /* position:fixed; */
+  bottom:0;
+  left:0;
+  right:0;
+}
+.lionpage footer{
+  background-color:#C98C35;
+}

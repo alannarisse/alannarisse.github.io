@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project One</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+
+  <nav>
+    <ul>
+      <li><a href="second.html">home</a></li>
+      <li><a href="lion.html">lion</a></li>
+      <li><a href="">Link</a></li>
+      <li><a href="">Link</a></li>
+      <li><a href="">Link</a></li>
+    </ul>
+  </nav>
+
+<main>
+    <article class='navigation flexbox'>
+      <section class="left">
+      <div>
+          <a href="lion.html">
+          <img class="lion-img" src="images/lion-off.png">
+          <img class="lion-img cat-hover" src="images/lion-hover.png">
+          </a>
+      </div>
+      <div>
+          <a href="#auguste">
+          <img src="images/auguste-button-default.png">
+          <img class="cat-hover" src="images/auguste-button-hover.png"> </a>
+      </div>
+    </section>
+    <section class="right">
+      <div>
+          <a href="#character">
+          <img src="images/character-button-default.png">
+          <img class="cat-hover" src="images/character-button-hover.png"> </a>
+      </div>
+      <div>
+          <a href="#mime">
+          <img src="images/mime-button-default.png">
+          <img class="cat-hover" src="images/mime-button-hover.png"> </a>
+      </div>
+      </article>
+    </section>
+</main>
+
+<footer>
+  <div><a href="#">footer link!</a></div>
+</footer>
+
+
+  
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $('.navigation div').hover(
+        function(){
+            $(this).find('img').toggleClass('cat-hover');
+        }
+    )
+</script>
+</body>
+</html>

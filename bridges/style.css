@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Radley&display=swap');
+
+* {box-sizing: border-box;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family:'Krub',sans-serif;
+  margin:0;
+  background-color:#85b8a9;
+
+}
+
+body.hawthornepage {
+  background-color:rgb(166, 219, 244);
+}
+.haw-img {
+  position:absolute;
+  bottom:100px;
+  right:0;
+  width:65vw;
+}
+h1, h2, h3, h4 {
+  font-family: 'Radley', serif;
+}
+
+img {
+  width:100%;
+}
+
+a { text-decoration:none;}
+a:hover {
+  color:cornflowerblue;
+}
+
+main {
+  /* margin-top:72px;  use only with position fixed */
+  width: 100vw;
+
+  /* height:100vh; */
+}
+
+
+header {
+  font-family: 'Radley', serif;
+  background-color:black;
+  display:flex;
+  width:100vw;
+  align-items:baseline;
+  padding: 10px 20px 0 20px;
+  /* position:fixed; turn all these on for position fixed.
+  top:0;
+  left:0;
+  right:0; */
+}
+header a {
+  color:white;
+}
+header a:hover {
+border-bottom:1px solid white;
+color:white;
+}
+.logo {
+  flex:25%;
+}
+
+nav {
+  flex:75%;
+}
+
+nav ul { 
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+  align-items:end;
+  margin:0;
+}
+nav li {
+  padding:10px 0;
+
+  
+}
+nav li {
+  padding:10px 30px;
+}
+
+
+.border {
+  border: 1px solid black;
+}
+
+.flexbox {
+  display:flex;
+  width:95%;
+  margin:auto;
+  margin-top:60px;
+}
+.flexbox div {
+  flex:1;
+}
+
+footer a {
+  color: white;
+}
+
+body.subpage01 footer a {
+  color: #fff;
+}
+footer {
+  position:relative;
+  display: flex;
+  justify-content:flex-end;
+  background-color:black;
+  padding:30px 60px;
+  /* remove the position fixed if it's cutting off the content */
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
