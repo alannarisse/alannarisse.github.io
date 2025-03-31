@@ -1,0 +1,16 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.two-col {
+  display: flex;
+  width: 60%;
+  margin:auto;
+}
+header, main, section, article {
+  /* border: 1px solid black; */
+  margin:4px;
+}
+
+.two-col article {
+  flex:1;
+}
