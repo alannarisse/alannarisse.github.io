@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:wght@100..900&display=swap');
 
+* {
+  box-sizing:border-box;
+}
 /* 
   font-family: "Montserrat", sans-serif;
   font-family: "Boldonse", system-ui;
@@ -8,13 +11,18 @@
 
  body {
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 20px;
+
+ }
+
+.wrapper {
   background-image: url('images/stefan-grage-Y4MKctPwIrw-unsplash.jpg');
   background-size:cover;
   background-repeat:no-repeat;
+  min-height:100vh;
  }
  p, li, form {
-  font-size: 2rem;
+  font-size: 1rem;
  }
  h1, h2, h3, h4 {
   font-family: "Boldonse", system-ui;
@@ -22,16 +30,44 @@
 
 
 .flex-2, .flex-2 div {
-  border:1px solid black;
   margin:4px;
 }
 
 .flex-2 {
   display:flex;
-  width:80%;
-  margin:auto;
+  width:60%;
+  margin: 40px auto;
 }
 
 .flex-2 div {
   flex:1;
+}
+.icon {
+  height:36px;
+}
+footer {
+  padding:60px 20px 40px 20px;
+  text-align:center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size:1.4rem;
+  }
+  h2 {
+    font-size:1.2rem;
+  }
+  .flex-2 {
+    width:90%;
+    flex-direction:column;
+  }
+  .wrapper {
+    background-position: 100% 80%;
+  }
+
 }

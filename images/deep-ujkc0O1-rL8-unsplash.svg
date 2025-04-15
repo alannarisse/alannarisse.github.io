@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   sodipodi:docname="sun_mountain4.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="images\sun_mountain4.png"
+   inkscape:export-xdpi="131.25"
+   inkscape:export-ydpi="131.25"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.25"
+     inkscape:cx="-140"
+     inkscape:cy="1426"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     id="g3"
+     style="display:inline"
+     transform="scale(1.6)">
+    <rect
+       style="fill:#b8daca;fill-opacity:1;fill-rule:evenodd;stroke-width:0;paint-order:fill markers stroke"
+       id="rect3"
+       width="640"
+       height="640"
+       x="0"
+       y="0"
+       inkscape:label="background" />
+    <path
+       style="opacity:1;fill:#18686f;fill-opacity:1;fill-rule:evenodd;stroke-width:0;paint-order:fill markers stroke"
+       d="m 0,384.484 c 10.073421,-7.82635 98.42405,-38.15115 189.59375,6.93006 C 241.09004,416.87773 274.00379,446.50253 338.5,463.9 L 339.73437,640 H 0 Z"
+       id="path1"
+       sodipodi:nodetypes="cscccc"
+       inkscape:label="blue" />
+    <path
+       style="fill:#f9843e;fill-opacity:1;fill-rule:evenodd;stroke-width:0;paint-order:fill markers stroke"
+       d="M 640,426.07603 V 640 H 0.00390625 L 0,439.953 c 54.529193,-5.64095 138.52575,58.14459 184.37809,62.75529 52.711,5.30036 104.02217,-21.57766 154.12191,-38.79857 75.47508,-25.94324 216.20374,-51.83536 301.5,-37.83369 z"
+       id="path2"
+       sodipodi:nodetypes="ccccssc"
+       inkscape:label="orange" />
+    <circle
+       style="fill:#fee1c1;fill-opacity:1;fill-rule:evenodd;stroke-width:0;paint-order:fill markers stroke"
+       id="path3"
+       cx="207.06096"
+       cy="187.62593"
+       r="90"
+       inkscape:label="sun" />
+  </g>
+</svg>
