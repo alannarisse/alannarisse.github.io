@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    section {
+      border:4px solid red;
+      margin: 4px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); */
+      grid-column-gap:50px;
+      grid-row-gap: 30px;
+    }
+    /* .feature {
+      grid-column: 1/4;
+    } */
+    article {
+      border:4px solid blue;
+      margin: 4px;
+      background:#ccc;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <section>
+
+    <article>
+      <p>First box</p>
+    </article>
+
+    <article class="feature">
+      <p>Second box</p>
+    </article>
+
+    <article>
+      <p>Third box</p>
+    </article>
+
+    <article>
+      <p>Fourth box</p>
+    </article>
+
+    <article>
+      <p>Fifth box</p>
+    </article>
+   <article>
+      <p>Third box</p>
+    </article>
+
+    <article>
+      <p>Fourth box</p>
+    </article>
+
+    <article>
+      <p>Fifth box</p>
+    </article>
+  </section>
+
+
+</body>
+</html>
