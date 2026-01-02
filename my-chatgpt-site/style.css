@@ -1,9 +1,5 @@
 @import url("https://use.typekit.net/qyw3iag.css");
-/* 
-font-family: 'Inconsolata', monospace;
-font-family: 'Pixelify Sans', sans-serif;
-font-family: 'Space Mono', monospace;
- */
+
 /* 
 font-family: "input-mono", monospace;
 font-family: salbabida-sans-pro, sans-serif;
@@ -15,36 +11,28 @@ font-family: salbabida-sans-pro, sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: "input-mono", monospace;
-    font-size: 20px;
+  font-family: "input-mono", monospace;
+  font-size: 20px;
 }
-
 /* Style the hero section with a background image */
 .hero {
-    background: url('images/spiral.gif') center/cover no-repeat;
+    background: url('images/home_background3.gif') center/cover no-repeat;
     text-align: center;
     color: #fff;
     padding: 100px 0;
 }
-
-h1,
-h2,
-h3 {
-    margin-top: 0;
-    font-family: 'Pixelify Sans', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: salbabida-sans-pro, sans-serif;
 }
 
 /* Style the header text in the hero section */
 .hero h1 {
     font-size: 36px;
 }
-
 img {
-    width: 100%;
+  width:100%;
 }
-
 /* Create a grid for the content section */
 .content {
     display: flex;
@@ -57,13 +45,6 @@ img {
     text-align: center;
     width: 30%;
     padding: 20px;
-}
-
-a {
-    color: rgb(3, 170, 189);
-}
-a:hover {
-    color: rgb(250, 130, 2);
 }
 
 /* Style the footer section */
