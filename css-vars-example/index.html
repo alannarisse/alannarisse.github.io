@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables in CSS</title>
+  <style>
+    .hero {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      background-color: rgb(117, 190, 117);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .anim {
+      width: 120px;
+      height: 120px;
+      background: #ccc;
+      border: 1px solid #333;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /*  */
+      opacity: 0;
+      /* name duration timing-func delay direction it-count fill-mode */
+      animation: moveme 1s cubic-bezier(0.68, -0.2, 0.32, 1.2) 1s 1 forwards;
+      /* another bez curve: cubic-bezier(0.470, 0.475, 0.570, 1.415) */
+    }
+
+
+    .pos1 {
+      --tile-top: 20%;
+      --tile-left: 20%;
+    }
+
+    .pos2 {
+      --tile-top: 80%;
+      --tile-left: 80%;
+    }
+
+    .pos3 {
+      --tile-top: 40%;
+      --tile-left: 40%;
+    }
+
+    .pos4 {
+      --tile-top: 60%;
+      --tile-left: 60%;
+    }
+
+    .pos5 {
+      --tile-top: 60%;
+      --tile-left: 20%;
+    }
+
+    .pos6 {
+      --tile-top: 20%;
+      --tile-left: 60%;
+    }
+
+    .pos7 {
+      --tile-top: 80%;
+      --tile-left: 40%;
+    }
+
+    .pos8 {
+      --tile-top: 40%;
+      --tile-left: 80%;
+    }
+
+    @keyframes moveme {
+      to {
+        top: var(--tile-top);
+        left: var(--tile-left);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div>
+      <h1>I'm some words</h1>
+      <p><a href="https://tools.webdevpuneet.com/css-easing-generator/" target="_blank">Bezier tools that do bounce.</a>
+      </p>
+    </div>
+
+    <div class="anim pos1">1</div>
+    <div class="anim pos2">2</div>
+    <div class="anim pos3">3</div>
+    <div class="anim pos4">4</div>
+    <div class="anim pos5">5</div>
+    <div class="anim pos6">6</div>
+    <div class="anim pos7">7</div>
+    <div class="anim pos8">8</div>
+  </header>
+</body>
+
+</html>
