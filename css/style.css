@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Big River";
+    src:
+      local("Big River"),
+      url("../font/big_river_sample.otf") format("opentype");
+  }
+
+  h1  {
+    font-family: "paper-clip-nova-basic", sans-serif;
+}
+h1 {
+    font-size:60px;
+}
+h2 {
+    font-size:40px;
+}
+body {
+    font-size:40px;
+    font-family:'bahnschrift', sans-serif;
+}
+
+  h2 {
+    font-family: 'Big River';
+  }
+
+  img {
+    width:100%;
+  }
+  .flexme {
+    display:flex;
+    width:80%;
+    margin:auto;
+  }
+  .flexme section {
+    flex:1;
+    border:1px solid red;
+    position:relative;
+    height:200vh;
+
+
+  }
+  .left img {
+    top:0;
+    left:0;
+    width:40%;
+    position:absolute;
+    z-index:-99999;}
+  .right img {
+    top:0;
+    left:0;
+    width:40%;
+    position:absolute;
+    z-index:-99999;
+  }
+
+  header, main {
+    width:80%;
+    margin:auto;
+  }
