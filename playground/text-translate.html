@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 30px;
+      }
+      section {
+        width: 80%;
+        margin: auto;
+      }
+      .english-translate .cn {
+        display: none;
+      }
+      .mandarin-translate .en {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="english-translate">
+        <p class="en">This is some text</p>
+        <p class="cn">这真是一段文字</p>
+      </div>
+
+      <div class="english-translate">
+        <p class="en">The rain in spain stays mainly on the plain</p>
+        <p class="cn">西班牙的降雨主要集中在平原地区</p>
+      </div>
+
+      <div class="mandarin-translate">
+        <p class="en">This is some text</p>
+        <p class="cn">这真是一段文字</p>
+      </div>
+
+      <div class="mandarin-translate">
+        <p class="en">The rain in spain stays mainly on the plain</p>
+        <p class="cn">西班牙的降雨主要集中在平原地区</p>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $('.english-translate').mouseover(function () {
+        $(this).find('.en').css('display', 'none');
+        $(this).find('.cn').css('display', 'block');
+      });
+      $('.english-translate').mouseout(function () {
+        $(this).find('.en').css('display', 'block');
+        $(this).find('.cn').css('display', 'none');
+      });
+
+      $('.mandarin-translate').mouseover(function () {
+        $(this).find('.cn').css('display', 'none');
+        $(this).find('.en').css('display', 'block');
+      });
+      $('.mandarin-translate').mouseout(function () {
+        $(this).find('.cn').css('display', 'block');
+        $(this).find('.en').css('display', 'none');
+      });
+    </script>
+  </body>
+</html>

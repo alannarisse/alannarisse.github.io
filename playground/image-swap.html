@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Swap</title>
+    <style>
+      .potatoes {
+        position: relative;
+      }
+      .potato-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 300px;
+      }
+      #one {
+        background-image: url('images/crissy-jarvis-gdL-UZfnD3I-unsplash.jpg');
+        background-size: cover;
+      }
+      #two {
+        background-image: url('images/kati-hoehl-i3rBo3b9QbA-unsplash.jpg');
+        background-size: cover;
+      }
+      #three {
+        background-image: url('images/pexels-tara-winstead-8850706.jpg');
+        background-size: cover;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="potatoes">
+      <div class="potato-box" id="one"></div>
+      <div class="potato-box hide" id="two"></div>
+      <div class="potato-box hide" id="three"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.potato-box').click(function () {
+        $('potato-box').remove('#one');
+        $('#two').toggleClass('hide');
+      });
+      $('#two').click(function () {
+        $('#two').remove('#two');
+        $('#three').toggleClass('hide');
+      });
+    </script>
+  </body>
+</html>
