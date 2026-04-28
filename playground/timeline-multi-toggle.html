@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- from https://codepen.io/CryptoCat/pen/NPKVWEw -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #7f9cb3;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .toggle-container {
+      text-align: center;
+      width: 90%;
+      /* Ensures some responsiveness for container */
+      max-width: 600px;
+      /* Optional max-width to prevent it from stretching too wide */
+      margin: 0 auto;
+    }
+
+    /* Title above the toggle */
+    .title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      color: white;
+    }
+
+    /* Toggle pill style */
+    .toggle {
+      position: relative;
+      width: 100%;
+      /* Uses container’s width for responsiveness */
+      max-width: 500px;
+      /* Maximum width for larger screens */
+      height: 35px;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .toggle>hr {
+      border: 2px solid white;
+      position: absolute;
+      width: 100%;
+      max-width: 496px;
+      bottom: 0;
+      margin: 0;
+    }
+
+    .segment {
+      flex: 1;
+      height: 36px;
+    }
+
+    .lines {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: 32px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .lines hr {
+      margin: 0;
+      margin-left: -2px;
+      border: 2px solid white;
+      height: 32px;
+      width: 3px;
+      position: absolute;
+      top: -2px;
+      display: block;
+    }
+
+    .lines hr.tab1 {
+      left: 0;
+    }
+
+    .lines hr.tab2 {
+      left: 250px;
+    }
+
+    .lines hr.tab3 {
+      left: 494px;
+    }
+
+    img.flag {
+      height: 35px;
+    }
+
+    .selector-node {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -16px;
+      transition: left 0.3s ease;
+    }
+
+    .label {
+      margin-top: 32px;
+      color: white;
+    }
+
+    .left-label {
+      margin-left: -12px;
+    }
+
+    .right-label {
+      margin-right: -12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="toggle-container">
+    <div class="title">Multi-Toggle Selector</div>
+    <div class="toggle">
+      <hr>
+      <div class="segment" data-index="0"></div>
+      <div class="segment" data-index="1"></div>
+      <div class="segment" data-index="2"></div>
+
+      <!-- add more segments as needed: data-index="5" etc. -->
+      <div class="selector-node">
+        <img class="flag" src="flag.svg">
+      </div>
+    </div>
+    <div class="lines">
+      <hr class="tab1">
+      <p class="label left-label">2025</p>
+      <hr class="tab2">
+      <p class="label middle-label">2050</p>
+      <hr class="tab3">
+      <p class="label right-label">2100</p>
+    </div>
+
+  </div>
+  <script>
+    // Define the five selections with unique titles and colors.
+    const selections = [
+      { title: "A whole bunch of text" },
+      { title: "Some different text" },
+      { title: "The last text of the timeline" },
+    ];
+
+    const segments = document.querySelectorAll('.segment');
+    const node = document.querySelector('.selector-node');
+    const titleEl = document.querySelector('.title');
+    const toggle = document.querySelector('.toggle');
+
+    let activeIndex = 0;
+
+    // Given the index, compute the left offset for the node.
+    function moveNode(index) {
+      const toggleWidth = toggle.offsetWidth;
+      const nodeDiameter = toggle.offsetHeight;
+      const segmentsCount = selections.length;
+
+      // Calculate the left position:
+      const left = (index * (toggleWidth - nodeDiameter)) / (segmentsCount - 1);
+
+      node.style.left = left + "px";
+      node.style.borderColor = selections[index].color;
+      titleEl.textContent = selections[index].title;
+    }
+
+    // Add event listeners to each segment for hover and click.
+    segments.forEach((seg, i) => {
+      seg.addEventListener("click", () => { //was mouseover
+        moveNode(i);
+      });
+
+      seg.addEventListener("click", () => {
+        activeIndex = i;
+      });
+    });
+
+    // Initialize with the first selection.
+    moveNode(activeIndex);
+
+    // Recalculate positions on window resize to keep everything relative.
+    window.addEventListener("resize", () => {
+      moveNode(activeIndex);
+    });
+
+  </script>
+</body>
+
+</html>
