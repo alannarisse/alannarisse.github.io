@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    section {
+      height: 100vh;
+      width: 100vw;
+      background: #ba94d3;
+    }
+
+    .content {
+      display: flex;
+      color: white;
+
+      background: #833AB4;
+      background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .centered {
+      width: 40vw;
+    }
+
+    .popup-p {
+      text-align: center;
+    }
+
+    .popup-btn {
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+    }
+
+    .popup {
+      opacity: 0;
+      position: absolute;
+      background: white;
+      color: #333;
+      width: 50vw;
+      height: 50vh;
+      overflow: scroll;
+      padding: 60px;
+      z-index: -1;
+    }
+
+    .popup-show {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    #close-btn {
+      position: absolute;
+      color: red;
+      right: 20px;
+      top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+
+    I'm the first section!
+  </section>
+  <section class="content">
+
+    <div class="centered">
+      <h2>This is a flexy awesome page</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam a laboriosam autem inventore error dolorum illo
+        tenetur optio maxime dicta.</p>
+      <p class="popup-p"><a href="#" class="popup-btn" id="popup-btn">popup</a></p>
+    </div>
+    <div class="popup" id="popup-window">
+      <a href="#" id="close-btn">X</a>
+      <h2>Hurray for popups!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia iure, consequatur ratione alias quaerat facilis
+        tempora necessitatibus? Voluptas dolorem reprehenderit, soluta iure sint animi! Eius optio, repudiandae iste
+        veniam amet facere culpa commodi cupiditate quae quod cumque illo porro magni saepe! Deleniti itaque aliquam
+        tempora eius sequi debitis sint corrupti hic, fuga consequuntur voluptates cumque eveniet veniam, ducimus amet
+        sunt. Alias, provident amet? Id possimus autem animi, dignissimos maxime pariatur voluptatum repudiandae? Quo
+        mollitia facilis rem officia, ullam, reprehenderit voluptas vitae temporibus cumque doloribus necessitatibus ex
+        dicta quos nesciunt eligendi minima explicabo. Nesciunt animi voluptatem explicabo rerum similique corrupti. Ea,
+        est perspiciatis! Minus nobis ipsam sunt sed, illo similique quis unde rerum quia ut doloremque. Dolorem alias
+        quibusdam doloremque commodi, similique cumque maxime beatae sunt cupiditate quam earum magni voluptas fugit
+        omnis quo laboriosam atque aperiam. Quas commodi iste culpa pariatur consectetur eum blanditiis deserunt optio,
+        ullam consequuntur nemo molestias incidunt expedita ipsa fuga totam sapiente dolore suscipit est molestiae odit
+        illum? Amet iusto hic expedita, eius fugit, dignissimos error nisi soluta vitae quia cum. Expedita est
+        accusantium nisi deserunt ullam dolores, optio voluptate? Officia possimus modi dignissimos quos. Beatae error
+        quae voluptatem asperiores possimus exercitationem, corrupti harum? Inventore, mollitia! Libero temporibus
+        praesentium cupiditate consequuntur. Blanditiis, repudiandae quam eligendi omnis quas ullam deleniti ad placeat,
+        exercitationem voluptatum alias libero, accusamus assumenda! Dolores eius illo voluptate ducimus reprehenderit?
+        Placeat tempora ratione officiis sint tenetur natus accusamus blanditiis quasi nihil ullam perferendis officia
+        laboriosam nulla veritatis, modi sequi sapiente pariatur rem aspernatur accusantium architecto. Molestiae magnam
+        exercitationem facere, asperiores deserunt nam sed, repellendus labore vel veritatis expedita excepturi nisi,
+        doloribus accusamus qui dicta! Laudantium dolorem perspiciatis sed. Hic repellat dolor, illum delectus adipisci,
+        architecto nostrum voluptatibus assumenda aliquam odio reiciendis id ut quis sit libero nobis nemo ad dicta
+        facilis consequatur quos soluta reprehenderit velit esse! Suscipit id facilis commodi, sequi recusandae nulla
+        quam quae repudiandae eius impedit quas a veniam saepe nam? Possimus, natus. Doloribus animi eum repudiandae
+        atque nam soluta voluptatum, sed, quos quisquam illum reprehenderit dolorem corrupti. Dolorum rem eius molestias
+        quasi quia qui facere asperiores dolores consectetur, sed assumenda quae labore pariatur? Nesciunt accusantium
+        laborum eveniet nostrum sed quas tempora doloremque doloribus provident? Dolores laudantium ea, accusantium
+        doloribus culpa perferendis ullam corrupti itaque assumenda deleniti porro suscipit qui alias error. Et ipsam
+        libero harum quae veniam porro ex repellat optio tempora accusamus id, beatae, quia aspernatur provident, iure
+        at. Consectetur rerum optio labore voluptate omnis accusantium, fuga, eligendi molestias provident unde sapiente
+        dolorem maiores? Repellendus vero quas sit delectus rerum doloribus sequi explicabo accusamus esse sed
+        aspernatur natus nobis, tenetur consectetur dolores? Perspiciatis provident accusantium ipsum in sapiente
+        perferendis nobis laudantium rem at eveniet tempora, nulla, dignissimos enim dolor eaque velit corporis? In
+        explicabo dolorem dolores maiores cupiditate consectetur voluptate rerum deleniti sequi beatae nulla pariatur
+        voluptatem perferendis odio, quod unde odit officia mollitia! Suscipit quos consequuntur eveniet ipsam
+        cupiditate tenetur exercitationem, doloribus harum modi temporibus ratione culpa tempora reiciendis esse!
+        Praesentium velit sequi natus. Tempore, nam provident.</p>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+
+
+  <script>
+    $('#popup-btn').click(
+      function () {
+        $('#popup-window').addClass('popup-show')
+      }
+    )
+
+    $('#close-btn').click(
+      function () {
+        $('#popup-window').removeClass('popup-show')
+      }
+    )
+  </script>
+
+  <script>
+    // use a script tag or an external JS file
+
+    gsap.registerPlugin(Draggable)
+
+    Draggable.create('#popup-window', {
+      type: 'x,y'
+    });
+
+
+
+  </script>
+
+
+</body>
+
+</html>
