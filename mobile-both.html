@@ -15,7 +15,7 @@
       color: white;
     }
 
-    .pointercoarse,
+    .both,
     .max1280 {
       display: none;
     }
@@ -34,12 +34,13 @@
       }
     }
 
-    @media (pointer:coarse) {
+    @media (pointer:coarse),
+    (hover:none) {
       body {
-        background: purple;
+        background: fuchsia;
       }
 
-      .pointercoarse {
+      .both {
         display: block;
       }
     }
@@ -49,13 +50,12 @@
 <body>
   <h1>Hi everybody</h1>
   <ul>
+    <li class="both">fucshia is @media hover:none and pointer:coarse, comma separated</li>
     <li class="max1280">red is @media max width 1280</li>
     <li class="nomedia">blue is no media query</li>
-    <li class="pointercoarse">purple is @media pointer:coarse</li>
   </ul>
-  <p><a href="mobile-both.html">try both, comma separated</a></p>
+  <p><a href="mobile-coarse.html">try coarse only</a></p>
   <p><a href="mobile.html">back</a></p>
-
 </body>
 
 </html>
